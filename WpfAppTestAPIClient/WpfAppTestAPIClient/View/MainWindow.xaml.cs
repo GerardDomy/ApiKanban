@@ -50,15 +50,15 @@ namespace WpfAppTestAPIClient
 
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            Tasca user = await api.GetUserAsync(1);
+            Tasca user = await api.GetUserAsync("Eloi");
             List<Tasca> users = await api.GetUsersAsync();
-            DateTime birthday = new DateTime(2000, 12, 01);
-            user = new Tasca() { Name = "Maria", LastName = "Perez", Birthday = birthday };
+            DateTime datainici = new DateTime(2000, 12, 01);
+            DateTime datafinal = new DateTime(2000, 12, 24);
+            user = new Tasca() { Nom = "TascaWPF" , Autor = "Eloi", Background = "Orange", DataFinal =datafinal, DataInici = datainici ,
+                Estat = "Doing", Descripcio = "fer tasca numero 4 de M07"};
             await api.AddAsync(user);
-            user.Id = 2;
-            user.Name = "xxx";
             await api.UpdateAsync(user);
-            await api.DeleteAsync(2);
+            await api.DeleteAsync("Eloi");
         }
    
 

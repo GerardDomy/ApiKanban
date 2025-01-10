@@ -61,7 +61,7 @@ namespace WpfAppTestAPIClient
                     Tasca oUser = (Tasca)dgUsers.SelectedItem;
 
                     //Eliminen usuari
-                    await api.DeleteAsync(oUser.Id);
+                    await api.DeleteAsync(oUser.Autor);
                    
                     //Actualitzem dades del grid
                     refresh();

@@ -7,13 +7,15 @@
         mc:Ignorable="d"
         Title="WindowDataGrid" Height="450" Width="800"  Loaded="Window_Loaded">
     <Grid>
-        <DataGrid x:Name="dgUsers" VerticalAlignment="Top" HorizontalAlignment="Left" Width="Auto" 
+        <DataGrid x:Name="dgUsers" VerticalAlignment="Top" HorizontalAlignment="Left" Width="593" 
           AutoGenerateColumns="False" CanUserResizeColumns="True" CanUserAddRows="False" >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Id" IsReadOnly="True" Binding="{Binding Id}" Width="30"/>
+                <DataGridTextColumn Header="Id" IsReadOnly="True" Binding="{Binding Autor}" Width="30"/>
                 <DataGridTextColumn Header="Nom" IsReadOnly="True" Binding="{Binding Name}" Width="100"/>
-                <DataGridTextColumn Header="Cognom" IsReadOnly="True" Binding="{Binding LastName}" Width="Auto"/>
-                <DataGridTextColumn Header="Data naixement" IsReadOnly="True" Binding="{Binding Birthday}" Width="Auto"/>
+                <DataGridTextColumn Header="Estat" IsReadOnly="True" Binding="{Binding Estat}" Width="Auto"/>
+                <DataGridTextColumn Header="Background" IsReadOnly="True" Binding="{Binding Background}" Width="Auto"/>
+                <DataGridTextColumn Header="DataInicial" IsReadOnly="True" Binding="{Binding DataInici}" Width="Auto"/>
+                <DataGridTextColumn Header="DataFinal" IsReadOnly="True" Binding="{Binding DataFinal}" Width="Auto"/>
                 <!--Añadimos botones editar y eliminar-->
                 <!--Boton Editar -->
                 <DataGridTemplateColumn Header="Editar">

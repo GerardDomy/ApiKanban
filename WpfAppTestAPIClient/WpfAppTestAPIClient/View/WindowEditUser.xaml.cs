@@ -67,9 +67,12 @@ namespace WpfAppTestAPIClient
             try
             {
                 oUser = new Tasca();
-                oUser.Name = Name.Text;
-                oUser.LastName = LastName.Text;
-                oUser.Birthday = BirthDate.SelectedDate.Value;
+                oUser.Nom = Name.Text;
+                oUser.Autor = Autor.Text;
+                oUser.DataInici = DataInici.SelectedDate.Value;
+                oUser.DataFinal = DataFinal.SelectedDate.Value;
+                oUser.Background = Background.Text;
+                oUser.Estat = Estat.Text;
                 await api.AddAsync(oUser);
 
                 mainWindow.refresh();

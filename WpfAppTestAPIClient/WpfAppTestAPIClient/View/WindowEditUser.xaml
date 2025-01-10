@@ -5,9 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppTestAPIClient"
         mc:Ignorable="d"
-        Title="WindowEditUser" Height="200" Width="300">
-    <Grid Margin="10,10,10,10">
+        Title="WindowEditUser" Height="254" Width="300">
+    <Grid Margin="10,10,10,6">
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -19,19 +22,39 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Label Content="Id:" Grid.Row="0" Grid.Column="0"></Label>
-        <TextBlock Name="Id" Grid.Row="0" Grid.Column="1" Text="{Binding Id}"></TextBlock>
+        <Label Content="Autor:" Grid.Row="0" Grid.Column="0"></Label>
+        <TextBlock Name="Autor" Grid.Row="0" Grid.Column="1" Text="{Binding Autor}"></TextBlock>
 
         <Label Content="Nom:" Grid.Row="1" Grid.Column="0"></Label>
         <TextBox Name="Name" Grid.Row="1" Grid.Column="1" Text="{Binding Name}"></TextBox>
 
-        <Label Content="Cognom:" Grid.Row="2" Grid.Column="0"></Label>
-        <TextBox Name="LastName" Grid.Row="2" Grid.Column="1" Text="{Binding LastName}"></TextBox>
+        <Label Content="Descripcio:" Grid.Row="2" Grid.Column="0"></Label>
+        <TextBox Name="Descripcio" Grid.Row="2" Grid.Column="1" Text="{Binding Descripcio}"></TextBox>
 
-        <Label Content="Data Naixement:" Grid.Row="3" Grid.Column="0"></Label>
-        <DatePicker Name="BirthDate" Grid.Row="3" Grid.Column="1" SelectedDate ="{Binding Birthday}" SelectedDateFormat="Short"></DatePicker>
+        <Label Content="DataInici:" Grid.Row="3" Grid.Column="0"></Label>
+        <DatePicker Name="DataInici" Grid.Row="3" Grid.Column="1" SelectedDate ="{Binding DataInicial}" SelectedDateFormat="Short"></DatePicker>
 
-        <Button Name="btnUpdate" Content="Desar" Grid.Row="3" Grid.Column="1" Margin="0,43,0,0" Grid.RowSpan="2" Click="btnUpdate_Click"></Button>
+        <Label Content="DataFinal:" Grid.Row="4" Grid.Column="0"></Label>
+        <DatePicker Name="DataFinal" Grid.Row="4" Grid.Column="1" SelectedDate ="{Binding DataFinal}" SelectedDateFormat="Short"></DatePicker>
+
+        <Label Content="Background:" Grid.Row="5" Grid.Column="0"></Label>
+        <TextBox Name="Background" Grid.Row="5" Grid.Column="1" Text="{Binding Background}"></TextBox>
+
+        <Label Content="Estat:" Grid.Row="6" Grid.Column="0"></Label>
+        <TextBox Name="Estat" Grid.Row="6" Grid.Column="1" Text="{Binding Estat}"></TextBox>
+
+
+
+        <Button Name="btnUpdate" Content="Desar" Grid.Row="7" Margin="76,3,0,3" Click="btnUpdate_Click" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
 
     </Grid>
 </Window>
