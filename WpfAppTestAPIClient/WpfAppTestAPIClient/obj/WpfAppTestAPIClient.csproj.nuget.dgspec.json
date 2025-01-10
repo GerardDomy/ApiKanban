@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Downloads\\ProjecteAPI-20241219T142258Z-001\\ProjecteAPI\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj": {}
+    "C:\\Users\\INFORMATICA\\Source\\Repos\\ApiKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Downloads\\ProjecteAPI-20241219T142258Z-001\\ProjecteAPI\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj": {
+    "C:\\Users\\INFORMATICA\\Source\\Repos\\ApiKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Downloads\\ProjecteAPI-20241219T142258Z-001\\ProjecteAPI\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj",
+        "projectUniqueName": "C:\\Users\\INFORMATICA\\Source\\Repos\\ApiKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj",
         "projectName": "WpfAppTestAPIClient",
-        "projectPath": "C:\\Users\\Usuario\\Downloads\\ProjecteAPI-20241219T142258Z-001\\ProjecteAPI\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Downloads\\ProjecteAPI-20241219T142258Z-001\\ProjecteAPI\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\obj\\",
+        "projectPath": "C:\\Users\\INFORMATICA\\Source\\Repos\\ApiKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj",
+        "packagesPath": "C:\\Users\\INFORMATICA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\INFORMATICA\\Source\\Repos\\ApiKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\INFORMATICA\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
